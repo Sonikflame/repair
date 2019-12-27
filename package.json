@@ -1,0 +1,23 @@
+{
+  "name": "repair",
+  "version": "1.0.0",
+  "description": "Ремонт квартир в Тамбове",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sonikflame/repair.git"
+  },
+  "keywords": [],
+  "author": "Sonikflame",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sonikflame/repair/issues"
+  },
+  "homepage": "https://github.com/Sonikflame/repair#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
