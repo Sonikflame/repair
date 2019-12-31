@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Sonikflame/repair#readme",
   "devDependencies": {
     "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "fullpage.js": "^3.0.8"
   }
 }

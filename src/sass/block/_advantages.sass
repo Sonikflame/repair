@@ -1,0 +1,44 @@
+.advantages
+   display: flex
+   justify-content: center
+   max-width: 744px
+   margin: 0 auto
+   list-style: none
+   z-index: 1
+   &::after
+      position: absolute
+      content: ''
+      background: rgba(0, 0, 0, 0.3)
+      height: 145px
+      width: 90%
+      left: 0
+      bottom: 95px
+      border-radius: 0 72px 72px 0
+      z-index: -1
+   &__item
+      flex-basis: 25%
+      text-align: center
+   &__text
+      font-size: px-to-rem(17px)
+      line-height: px-to-rem(24px)
+
+@media ( max-width: 992px )
+   .advantages
+      flex-direction: column
+      &::after
+         display: none
+      &__item
+         flex-basis: 100%
+         padding: 24px
+         background: rgba(0, 0, 0, .3)
+         border-radius: 5px
+         margin-bottom: 24px
+         &:last-child
+            margin-bottom: 0
+
+@media ( max-width: 768px )
+   .advantages
+      &__text
+         font-size: px-to-rem(14px)
+         line-height: px-to-rem(22px)
+         margin: 10px 0 2px

@@ -1,13 +1,13 @@
 @charset "UTF-8"
 
 /* Основные стили */
-
-html
-	font-size: 16px
-	color: $color-black
+*
+	box-sizing: border-box
 
 body
-	font-family: 'Arial', sans-serif
+	+reg
+	font-size: 16px
+	color: $color-black
 	overflow-wrap: break-word
 	word-wrap: break-word
 
@@ -16,3 +16,22 @@ body
 
 .wrap
 	@include min-max(320px, 1140px, 15px)
+
+.button
+	width: 100%
+	background-color: $primary
+	font-size: px-to-rem(14px)
+	line-height: px-to-rem(16px)
+	text-align: center
+	color: $text-button
+	border-radius: 5px
+	border: none
+	display: block
+	padding-top: 14px
+	padding-bottom: 14px
+	text-decoration: none
+	transition-property: background-color
+	transition-duration: 500ms
+	cursor: pointer
+	&:hover
+		background-color: $primary-hover
