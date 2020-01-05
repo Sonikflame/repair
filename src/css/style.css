@@ -1269,7 +1269,7 @@ div.fp-controlArrow.fp-next {
   }
   .details__item:nth-child(2) {
     left: 460px;
-    top: 206px;
+    top: 236px;
   }
   .details__item:nth-child(3) {
     left: 730px;
@@ -1294,6 +1294,7 @@ div.fp-controlArrow.fp-next {
     text-align: left;
     width: 345px;
     opacity: 0;
+    z-index: -999;
     position: absolute;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -1325,6 +1326,7 @@ div.fp-controlArrow.fp-next {
   }
   .details__item:hover span {
     opacity: 1;
+    z-index: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
