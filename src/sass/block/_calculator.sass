@@ -1,0 +1,85 @@
+.calculator
+   background-color: #181818
+   color: $color-white
+   &__wrap
+      padding-bottom: 10px
+      padding-top: 100px
+      position: relative
+   &__title
+      font-size: px-to-rem(32px)
+      line-height: px-to-rem(37px)
+      color: $primary
+      text-align: center
+      margin: 0 0 20px 0
+      font-weight: 700
+   &__img
+      display: block
+      max-width: 100%
+      margin: 24px auto 30px
+      height: auto
+.calc
+   &__radio
+      margin-top: 7px
+      margin-bottom: 7px
+      input[type="radio"]
+         display: none
+         &:checked
+            + label
+               &::before
+                  content: ""
+                  width: 8px
+                  height: 3px
+                  border-left: 2px solid $primary
+                  border-bottom: 2px solid $primary
+                  position: absolute
+                  left: 3px
+                  top: 8px
+                  transform: rotate(-45deg)
+                  z-index: 1
+      label
+         font-size: px-to-rem(17px)
+         line-height: px-to-rem(24px)
+         position: relative
+         padding-left: 25px
+         cursor: pointer
+         display: inline-block
+         &::after
+            width: 16px
+            height: 16px
+            border: 1px solid $primary
+            content: ""
+            background-color: transparent
+            border-radius: 5px
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+   &__group
+      padding: 0
+      border: none
+      margin: 20px 0
+   &__title
+      font-size: px-to-rem(14px)
+      line-height: px-to-rem(16px)
+      font-weight: 700
+      margin-bottom: 10px
+   &__range
+      display: none
+      label
+         +visually-hidden
+   &__square
+      background-color: transparent
+      display: block
+      width: 100%
+      border-radius: 5px
+      border: 1px solid rgba(255, 255, 255, 0.2)
+      text-align: center
+      font-size: px-to-rem(14px)
+      line-height: px-to-rem(16px)
+      color: $color-white
+      padding: 12px 0
+   &__result
+      text-align: center
+      font-size: px-to-rem(17px)
+      line-height: px-to-rem(24px)
+      margin: 20px 0

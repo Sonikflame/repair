@@ -1435,4 +1435,128 @@ div.fp-controlArrow.fp-next {
     line-height: 1.1875rem;
   }
 }
+
+.calculator {
+  background-color: #181818;
+  color: #fff;
+}
+
+.calculator__wrap {
+  padding-bottom: 10px;
+  padding-top: 100px;
+  position: relative;
+}
+
+.calculator__title {
+  font-size: 2rem;
+  line-height: 2.3125rem;
+  color: #FCDB50;
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+}
+
+.calculator__img {
+  display: block;
+  max-width: 100%;
+  margin: 24px auto 30px;
+  height: auto;
+}
+
+.calc__radio {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.calc__radio input[type="radio"] {
+  display: none;
+}
+
+.calc__radio input[type="radio"]:checked + label::before {
+  content: "";
+  width: 8px;
+  height: 3px;
+  border-left: 2px solid #FCDB50;
+  border-bottom: 2px solid #FCDB50;
+  position: absolute;
+  left: 3px;
+  top: 8px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.calc__radio label {
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.calc__radio label::after {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #FCDB50;
+  content: "";
+  background-color: transparent;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.calc__group {
+  padding: 0;
+  border: none;
+  margin: 20px 0;
+}
+
+.calc__title {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.calc__range {
+  display: none;
+}
+
+.calc__range label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.calc__square {
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #fff;
+  padding: 12px 0;
+}
+
+.calc__result {
+  text-align: center;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  margin: 20px 0;
+}
 /*# sourceMappingURL=style.css.map */
