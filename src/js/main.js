@@ -11,9 +11,14 @@ $(document).ready(function() {
     });
 
     $(document).on('click', '.projects__mini a', changeImg);
-
     function changeImg(event) {
       event.preventDefault();
       $('.projects__big img').attr('src', $(this).attr('data-src'));
+    }
+
+    $(document).on('input', '.calc', changeInput);
+    function changeInput(event) {
+      event.preventDefault();
+      $(this).find('.calc__range output').val($(this).find('.calc__range input').val());
     }
 });
