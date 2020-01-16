@@ -1705,4 +1705,215 @@ div.fp-controlArrow.fp-next {
     margin-top: -2px;
   }
 }
+
+.contacts {
+  background: url("../img/contacts/map.jpg") 65% 150px #000 no-repeat;
+  background-size: cover;
+}
+
+.contacts__wrap {
+  padding-top: 100px;
+  padding-bottom: 170%;
+}
+
+.contacts__title {
+  font-size: 2rem;
+  line-height: 2.3125rem;
+  text-align: center;
+  color: #FCDB50;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+}
+
+.contacts__info {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 24px;
+}
+
+.contacts__phone, .contacts__mail, .contacts__address {
+  margin: 0 0 20px 0;
+}
+
+.contacts__phone span, .contacts__mail span, .contacts__address span {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 700;
+  padding-left: 30px;
+  background: url("../img/contacts/tel.svg") left center no-repeat;
+}
+
+.contacts__phone a, .contacts__mail a, .contacts__address a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 30px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+
+.contacts__phone a:hover, .contacts__mail a:hover, .contacts__address a:hover {
+  color: #FCDB50;
+}
+
+.contacts__mail span {
+  background-image: url("../img/contacts/mail.svg");
+}
+
+.contacts__address span {
+  background-image: url("../img/contacts/map.svg");
+  line-height: 1.5rem;
+}
+
+.contacts__address span:last-child {
+  background: none;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.contacts__shema {
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+  margin-left: 30px;
+}
+
+.contacts__shema span {
+  display: block;
+}
+
+.contacts__shema a {
+  text-decoration: none;
+  color: #FCDB50;
+}
+
+@media (min-width: 560px) {
+  .contacts__wrap {
+    padding-bottom: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    background-position: 75% 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contacts {
+    background-position: center top;
+  }
+  .contacts__info {
+    max-width: 358px;
+    margin-top: 30px;
+  }
+  .contacts__wrap {
+    padding-bottom: 10px;
+  }
+  .contacts__title {
+    max-width: 455px;
+    text-align: left;
+    margin: 20px 0;
+  }
+}
+
+.menu {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    position: fixed;
+    display: block;
+    right: 32px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    counter-reset: counter;
+  }
+  .menu__item {
+    position: relative;
+    margin-bottom: 14px;
+  }
+  .menu__item::before {
+    counter-increment: counter;
+    content: "0" counter(counter);
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: #fff;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    opacity: 0;
+  }
+  .menu__item a {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #FCDB50;
+    border-radius: 50%;
+    display: block;
+  }
+  .menu__item:last-child {
+    margin-bottom: 0;
+  }
+  .menu__item.active::before {
+    opacity: 1;
+  }
+  .menu__item.active a {
+    background-color: #fff;
+    width: 4px;
+    height: 4px;
+    margin: 0 auto;
+    border: none;
+  }
+}
+
+.scroll-down {
+  display: none;
+}
+
+.fp-viewing-lastPage .scroll-down {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .scroll-down {
+    position: fixed;
+    display: block;
+    right: 0;
+    top: calc(50% + 175px);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background-color: #fff;
+    z-index: 100;
+    border-radius: 5px;
+    padding: 25px 8px 55px;
+    cursor: pointer;
+    -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%, 0 85%);
+            clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%, 0 85%);
+  }
+  .scroll-down span {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    display: block;
+    text-align: left;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    margin-top: 25px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

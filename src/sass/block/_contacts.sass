@@ -1,0 +1,86 @@
+.contacts
+   background: url("../img/contacts/map.jpg") 65% 150px $color-black no-repeat
+   background-size: cover
+   &__wrap
+      padding-top: 100px
+      padding-bottom: 170%
+   &__title
+      font-size: px-to-rem(32px)
+      line-height: px-to-rem(37px)
+      text-align: center
+      color: $primary
+      margin: 0 0 20px 0
+      font-weight: 700
+   &__info
+      background-color: $color-white
+      border-radius: 5px
+      padding: 24px
+   &__phone, &__mail, &__address
+      margin: 0 0 20px 0
+      span
+         display: block
+         font-size: px-to-rem(14px)
+         line-height: px-to-rem(16px)
+         font-weight: 700
+         padding-left: 30px
+         background: url("../img/contacts/tel.svg") left center no-repeat
+      a
+         text-decoration: none
+         color: $color-black
+         font-size: px-to-rem(17px)
+         line-height: px-to-rem(24px)
+         display: inline-block
+         margin-top: 10px
+         margin-left: 30px
+         transition-duration: 500ms
+         transition-property: color
+         &:hover
+            color: $primary
+   &__mail
+      span
+         background-image: url("../img/contacts/mail.svg")
+   &__address
+      span
+         background-image: url("../img/contacts/map.svg")
+         line-height: px-to-rem(24px)
+         &:last-child
+            background: none
+            font-size: px-to-rem(17px)
+            line-height: px-to-rem(24px)
+            font-weight: 400
+            margin-top: 10px
+   &__shema
+      font-size: px-to-rem(17px)
+      line-height: px-to-rem(24px)
+      margin-bottom: 0
+      margin-left: 30px
+      span
+         display: block
+      a
+         text-decoration: none
+         color: $primary
+
+
+@media (min-width: 560px)
+   .contacts
+      &__wrap
+         padding-bottom: 100%
+
+
+@media (min-width: 768px)
+   .contacts
+      background-position: 75% 150px
+
+
+@media (min-width: 1024px)
+   .contacts
+      background-position: center top
+      &__info
+         max-width: 358px
+         margin-top: 30px
+      &__wrap
+         padding-bottom: 10px
+      &__title
+         max-width: 455px
+         text-align: left
+         margin: 20px 0
