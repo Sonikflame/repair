@@ -1916,4 +1916,117 @@ div.fp-controlArrow.fp-next {
     margin-top: 25px;
   }
 }
+
+.main-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-menu::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  z-index: 99;
+}
+
+.main-menu__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  position: relative;
+  background: url("../img/girl-mobile.png") right top no-repeat #FCDB50;
+  z-index: 200;
+  max-width: 320px;
+  height: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  overflow-y: auto;
+}
+
+.main-menu__item {
+  margin: 20px 0;
+}
+
+.main-menu__link, .main-menu__close {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  text-decoration: none;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.main-menu__link:hover, .main-menu__close:hover {
+  text-decoration: underline;
+}
+
+.main-menu__close {
+  padding-left: 30px;
+  background: url("../img/close.svg") left center no-repeat;
+}
+
+.main-menu__phone {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.main-menu__btn {
+  color: #000;
+  background-color: #fff;
+}
+
+.main-menu__callback {
+  opacity: 0.5;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.main-menu--active {
+  z-index: 200;
+}
+
+.main-menu--active::after {
+  opacity: 1;
+}
+
+.main-menu--active .main-menu__list {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media (min-width: 1024px) and (min-height: 768px) {
+  .main-menu__list {
+    background: url("../img/girl.png") center bottom no-repeat #FCDB50;
+    padding-left: 64px;
+    padding-top: 64px;
+  }
+  .main-menu__btn, .main-menu__callback, .main-menu__phone {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
