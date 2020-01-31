@@ -730,16 +730,6 @@ body {
   padding: 0;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .header {
-    background-image: url("../img/header/screen-bg-2x.jpg");
-  }
-  .header__lider::after {
-    background-image: url("../img/header/medal-2x.png");
-    background-size: cover;
-  }
-}
-
 @media (min-width: 480px) {
   .header {
     background-position: center top;

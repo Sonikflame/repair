@@ -18,9 +18,13 @@
   },
   "homepage": "https://github.com/Sonikflame/repair#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-tinypng-compress": "^1.2.5"
   },
   "dependencies": {
-    "fullpage.js": "^3.0.8"
+    "fullpage.js": "^3.0.8",
+    "gulp-htmlmin": "^5.0.1"
   }
 }
